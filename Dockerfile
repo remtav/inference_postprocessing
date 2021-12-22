@@ -13,3 +13,6 @@ RUN git clone --depth=1 https://github.com/NRCan/geo_sim_processing.git -b maste
 	&& qgis_process plugins enable geo_sim_processing \
 	&& qgis_process plugins enable grassprovider \
 	&& qgis_process plugins enable processing
+
+RUN git clone --depth=1 https://gccode.ssc-spc.gc.ca/geobase/innovation-ai/inference_postprocessing.git -b master \
+    /root/.local/share/QGIS/QGIS3/profiles/default/processing/models
